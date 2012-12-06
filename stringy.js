@@ -16,7 +16,9 @@ window.U = {
       fn();
     }
   },
-
+  randomRGB: function(){
+    return "rgb(" + (U.roundom(105) + 50) + "," + (U.roundom(105) + 50) + "," + (U.roundom(105) + 50) + ")"
+  },
   forEach: function(arr,fn){
     for(var i = 0, l = arr.length; i < l; i++){
       fn(arr[i]);
