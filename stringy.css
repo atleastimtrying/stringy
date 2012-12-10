@@ -9,6 +9,7 @@ body{
 header{
   background:#ccc;
   padding:16px;
+  padding-right:64px;
 }
 
 header h1{
@@ -22,9 +23,17 @@ header h2{
   line-height:24px;
   margin-bottom:8px;
 }
+header a{
+  text-decoration:none;
+  font-weight:bold;
+}
+header a:hover{
+  color:#666;
+}
 
 article{
   padding:16px;
+  margin-bottom:48px;
 
 }
 
@@ -70,4 +79,62 @@ footer{
 footer p{
   margin:8px;
   margin-top:7px;
+}
+
+#modal{
+  width:480px;
+  height:320px;
+  margin:-172px -262px;
+  position:fixed;
+  top:40%;
+  left:50%;
+  z-index:10;
+  display:none;
+  background-color:rgba(255,255,255,0.9);
+  padding:23px;
+  border: 1px solid #333;
+}
+
+#modal h2{
+  margin-bottom:8px;
+}
+
+#modal .close{
+  position:absolute;
+  top: 5px;
+  right: 5px;
+  line-height:0;
+  font-size:16px;
+  padding:10px 0;
+  width:20px;
+  background:#333;
+  color:#fff;
+  border-radius:10px;
+  text-align: center;
+  text-decoration:none;
+  font-family:"courier new", monotype;
+}
+#modal .close:hover{
+  background-color:#666;
+}
+canvas,
+#list{
+  display:block;
+  height:276px;
+  width:464px;
+  border: 1px solid #333;
+  padding:7px;
+}
+#list{
+  overflow-y:scroll;
+}
+#list li{
+  background:white;
+  color:#333;
+  font-size:8px;
+  line-height:8px;
+  padding:4px;
+}
+#list li:nth-child(even){
+  background:#ccc;
 }
